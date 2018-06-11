@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css">
+	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Lobster" rel="stylesheet">
+	<title>What type of coffee would you like?</title>
+</head>
+<body>
+
+
+<div class="ui container" id="form">
+	<h1 id="header">Place Your Coffee Orders like a Local</h1>
+	<h3>Enter the amount that you want in your coffee</h3>
+	<label>Coffee</label>
+	<span>X</span><input id="coffee" type="number" placeholder="0" value="0" min="1" max="2">
+	<label>Sugar</label>
+	<span>X</span><input id="sugar" type="number" placeholder="0" value="0" min="0" max="2">
+	<label>Condensed Milk</label>
+	<span>X</span><input id="c_milk" type="number" placeholder="0" value="0" min="0" max="1">
+	<label>Evaporated Milk</label>
+	<span>X</span><input id="e_milk" type="number" placeholder="0" value="0" min="0" max="1">
+	<button class="ui tiny green button" id="button" onclick="request()">Go</button>
+</div>
+
+
+<div class="ui container" id="coffee_section">
+	<div class="wrapper">
+	<span class="smoke"></span>
+	<div id="coffee_cup"></div>
+	<div id="water"></div>
+	<div id="coffee_image"></div>
+	<div id="c_milk_image"></div>
+	<div id="e_milk_image"></div>
+
+</div>
+
+</div>
+
+<!-- <div class="wrapper">
+  <div class="cup">
+    <span class="smoke"></span>
+  </div> -->
+</div>
+
+
+	<script src="main.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+</body>
+</html>

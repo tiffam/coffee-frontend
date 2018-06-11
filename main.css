@@ -1,0 +1,194 @@
+body {
+  background: #8FBC8F !important;
+}
+
+#myRange {
+	width: 100px;
+}
+
+span {
+	margin: 10px;
+}
+
+#header {
+	font-family: 'Lobster', cursive;
+	font-size: 60px;
+	padding: 10px;
+}
+
+button, input, optgroup, select, textarea {
+	margin: 10;
+}
+
+input {
+	width: 40px;
+	display: inline-block;
+	height: 30px;
+	text-align: center;
+	margin-right: 10px;
+	padding-left:10px;
+}
+
+label, #button {
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#button {
+	margin-left: 20px;
+	width: 100px;
+}
+
+#form {
+	padding-top: 50px;
+}
+
+#coffee_section {
+	/*position: relative;*/
+}
+
+#coffee_cup {
+	/*margin-top: 100px;*/
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: #b3ffff;
+	opacity: 0.5;
+	-webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+	clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+
+	margin: 100px auto 0px auto;
+
+}
+
+#water {
+	
+	/*margin-top: 100px;*/
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: #66d9ff;
+	opacity: 0.5;
+	-webkit-clip-path: polygon(5% 10%, 95% 10%, 80% 95%, 20% 95%);
+	clip-path: polygon(5% 10%, 95% 10%, 80% 95%, 20% 95%);
+	margin: -201px auto 0px auto;
+	left: 500px;
+}
+
+#coffee_image {
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: brown;
+	opacity: 0.5;
+	-webkit-clip-path: polygon(5% 15%, 95% 15%, 80% 95%, 20% 95%);
+	clip-path: polygon(10% 40%, 90% 40%, 80% 95%, 20% 95%);
+	margin: -201px auto 0px auto;
+	left: 500px;
+}
+
+#c_milk_image {
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: yellow;
+	opacity: 0.5;
+	/*-webkit-clip-path: polygon(0 11%, 100% 11%, 92% 28%, 5% 28%);*/
+	clip-path: polygon(5% 10%, 95% 10%, 92% 23%, 8% 23%);
+	margin: -201px auto 0px auto;
+	left: 500px;
+}
+
+
+.container {
+	text-align: center;
+
+}
+
+body {
+  background: #00bfb6;
+}
+
+.wrapper {
+  position: absolute;
+  margin-top: 150px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.smoke:before {
+  position: absolute;
+  content: "";
+  background: transparent;
+  width: 180px;
+  height: 30px;
+  top: 50px;
+  left: 10px;
+  box-shadow: 0px 25px 20px -9px #e5e5e5;
+  opacity: 0;
+  animation: smoke 4s linear infinite;
+  transition: 0.5s linear;
+}
+
+.smoke:after {
+  position: absolute;
+  content: "";
+  background: transparent;
+  width: 180px;
+  height: 30px;
+  left: 10px;
+  top: 50px;
+  box-shadow: 0px 25px 20px -9px #e5e5e5;
+  opacity: 0;
+  animation: smoke1 4s linear 2s infinite;
+  transition: 0.5s linear;
+}
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-35px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-55px);
+    opacity: 1;
+    width: 75%;
+    margin-left: 20px;
+  }
+
+  100% {
+    transform: translateY(-115px);
+    opacity: 0.2;
+    width: 20%;
+    margin-left: 40px;
+  }
+}
+
+@keyframes smoke1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-45px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-65px);
+    opacity: 1;
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  100% {
+    transform: translateY(-145px);
+    opacity: 0.2;
+    width: 0%;
+    margin-left: 60px;
+  }
+}
